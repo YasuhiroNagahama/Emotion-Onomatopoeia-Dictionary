@@ -6,7 +6,7 @@
   font-size: 16px;
 }
 
-.l_contents_card {
+.contents_card {
   height: 250px;
   width: 250px;
   overflow-y: scroll;
@@ -14,16 +14,16 @@
   scrollbar-width: none;
 }
 
-.l_contents_card::-webkit-scrollbar {
+.contents_card::-webkit-scrollbar {
   display: none;
 }
 
-.l_contents_card:hover {
+.contents_card:hover {
   transform: scale(1.05);
   transition: 0.5s;
 }
 
-.descCard {
+.desc-card {
   height: 150px;
   max-width: 550px;
 }
