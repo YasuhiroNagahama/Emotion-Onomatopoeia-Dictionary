@@ -53,7 +53,7 @@ class EmotionObject {
       buzz: "https://cdn.pixabay.com/photo/2020/02/13/10/29/bees-4845211_1280.jpg",
       caw: "https://cdn.pixabay.com/photo/2017/02/16/11/13/bird-2071185_1280.jpg",
       chatter:
-        "https://cdn.pixabay.com/photo/2014/07/25/08/55/bar-401546_1280.jpg",
+        "https://cdn.pixabay.com/photo/2015/12/08/12/55/people-1082897_1280.jpg",
       chant:
         "https://cdn.pixabay.com/photo/2016/07/19/07/43/parchment-1527650__340.jpg",
       clatter:
@@ -101,12 +101,12 @@ class EmotionObject {
     let descCard = "";
     for (let i = 0; i < ono.length; i++) {
       descCard += `
-        <div class="descCard d-flex justify-content-between align-items-center bg-white w-100 mt-3 py-3 px-1">
-          <div class="desc-wrapper">
+        <div class="desc-card d-flex justify-content-between align-items-center bg-white w-100 gap-2 px-2">
+          <div class="desc">
             <p class="h3">${ono[i]}</p>
             <p class="h6">${this.dictionary[ono[i]]}</p>
           </div>
-          <div class="desc-img-wrapper">
+          <div>
             <img src="${
               this.pictureDictionary[ono[i]]
             }" alt="画像が存在しません" class="desc-img">
@@ -123,7 +123,7 @@ class EmotionObject {
   <a href="#sec${n}" class="text-decoration-none">
     <div class="bg-${
       this.backgroundcolor[this.color]
-    } l_contents_card p-3 text-center">
+    } contents_card p-3 text-center">
         <h2 class="h2 text-white">${this.emotion}</h2>
         <p class="h1 my-3">${this.face[this.emotion]}</p>
         <p class="h5 text-white">${this.description}</p>
@@ -140,7 +140,7 @@ class EmotionObject {
       <div id="sec${n}" class="bg-${this.backgroundcolor[this.color]} p-3">
         <h1 class="h1 text-white text-left">${this.emotion}</h1>
         <p class="h5 text-white">${this.description}</p>
-        <div class="descCard_list d-flex justify-content-center align-items-center flex-wrap gap-3 my-5">${descCard}</div>
+        <div class="desc-card-wrapper d-flex justify-content-center align-items-center flex-wrap gap-3 my-5">${descCard}</div>
       </div>
   `;
 
@@ -197,6 +197,7 @@ let cardWrapper =
 let descWrapper = "";
 
 for (let i = 0; i < emotions.length; i++) {
+  console.log(typeof emotions[i].getHtmlCards(i));
   cardWrapper += emotions[i].getHtmlCards(i);
   descWrapper += emotions[i].getHtmlDesc(i);
 }
