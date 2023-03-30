@@ -2,6 +2,9 @@
 
 Emotion Onomatopoeia Dictionary
 
+# URL
+https://yasuhironagahama.github.io/Recursion-Project-1-2/
+
 # Explain
 
 感情について書かれた色付きのカードをクリックすると、その感情の擬音カードのセクションに移動します。
