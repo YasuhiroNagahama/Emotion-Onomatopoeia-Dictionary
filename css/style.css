@@ -6,7 +6,7 @@
   font-size: 16px;
 }
 
-.contents_card {
+.emotion-card {
   height: 250px;
   width: 250px;
   overflow-y: scroll;
@@ -14,21 +14,24 @@
   scrollbar-width: none;
 }
 
-.contents_card::-webkit-scrollbar {
+.emotion-card::-webkit-scrollbar {
   display: none;
 }
 
-.contents_card:hover {
+.emotion-card:hover {
   transform: scale(1.05);
-  transition: 0.5s;
 }
 
-.desc-card {
+.emotion-face {
+  font-size: 50px;
+}
+
+.category-item {
   height: 150px;
   max-width: 550px;
 }
 
-.desc-img {
+.category-img {
   width: 150px;
   height: 100px;
   object-fit: cover;
