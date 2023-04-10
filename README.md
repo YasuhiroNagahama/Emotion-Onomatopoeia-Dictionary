@@ -3,7 +3,8 @@
 Emotion Onomatopoeia Dictionary
 
 # URL
-https://yasuhironagahama.github.io/Recursion-Project-1-2/
+
+
 
 # Explain
 
